@@ -1,0 +1,20 @@
+b=[1,1]
+x=[]
+y=[]
+z=[]
+a=int(input())
+for i in range(a):
+#1+1=2   1+2=5
+    b.append(b[-1]+b[-2])
+print(b)
+for i in range(a+2):
+    if b[i]%2==1:
+        x.append(b[i])
+    else:
+        y.append(b[i])
+print(x)
+print(y)
+for i in range(len(y)):
+    for j in range(len(y)):
+        z.append(y[i]+y[j+1])
+print(sorted(list(set(z))))
